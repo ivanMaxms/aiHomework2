@@ -71,7 +71,3 @@ To get the application running, you'll need to start the backend services (API a
 ## API Documentation
 
 The API documentation is available at `http://localhost:8080/swagger-ui.html` when running the backend.
-
-## Testing
-
-### Frontend Tests
