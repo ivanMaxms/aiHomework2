@@ -38,7 +38,7 @@ const Home: React.FC = () => {
                 const filteredUsers = data.filter((user: User) => user.username !== 'admin');
                 setUsers(filteredUsers);
             } catch (err) {
-                setError('Failed to load users. Please try again later.');
+                setError('Failed to load users. Please login or try again later.');
             }
         };
         loadUsers();
