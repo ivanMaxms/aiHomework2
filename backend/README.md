@@ -95,7 +95,7 @@ docker build -t user-directory-backend .
 Run with Docker Compose:
 ```bash
 docker-compose -f docker-compose.yml up -d
-```
+``` 
 
 ### Backend Tests
 To run the backend tests, use the dedicated `test` service with Docker Compose. This will start a temporary container to run the tests.
