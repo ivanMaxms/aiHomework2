@@ -38,49 +38,34 @@ This is a complete full-stack web application featuring a React frontend and a S
 
 ## Quick Start
 
-The entire application can be started with a single command from the project root directory.
+To get the application running, you'll need to start the backend services (API and database) and the frontend development server separately.
 
-1.  **Build and Run Containers:**
+1.  **Start the Backend:**
+    Navigate to the `backend` directory and use Docker Compose to build and run the containers.
     ```bash
-    docker-compose up --build
+    cd backend
+    docker-compose up --build -d
     ```
-    This command will build the images for the frontend and backend services and start the application along with the PostgreSQL database.
+    The `-d` flag will run the containers in the background.
 
-2.  **Access the Application:**
+2.  **Start the Frontend:**
+    In a separate terminal, navigate to the `frontend` directory, install the dependencies, and start the development server.
+    ```bash
+    cd frontend
+    npm install
+    npm run dev
+    ```
+
+3.  **Access the Application:**
     *   The **frontend** will be available at [http://localhost:5173](http://localhost:5173).
     *   The **backend API** will be running at [http://localhost:8080](http://localhost:8080).
 
-3.  **Login Credentials:**
-    *   **Username:** `admin`
-    *   **Password:** `SecureAdminPass123`
-
----
+4.  **Login Credentials:**
+    *   **Username:** `
 
 ## Project Structure
 
-*   `/backend`: Contains the Spring Boot backend application.
+*   `/backend`: Contains the Spring Boot backend application and its `docker-compose.yml`.
 *   `/frontend`: Contains the React frontend application.
-*   `docker-compose.yml`: The main Docker Compose file to orchestrate all services.
 
 ## API Documentation
-
-The API documentation is available at `http://localhost:8080/swagger-ui.html` when running the backend.
-
-## Testing
-
-### Frontend Tests
-```bash
-cd frontend
-npm test
-```
-
-### Backend Tests
-From the project root, navigate to the `backend` directory and run the tests using the dedicated `test` service in Docker Compose:
-```bash
-cd backend
-docker-compose run --rm test
-```
-
-## License
-
-MIT 
