@@ -61,7 +61,8 @@ To get the application running, you'll need to start the backend services (API a
     *   The **backend API** will be running at [http://localhost:8080](http://localhost:8080).
 
 4.  **Login Credentials:**
-    *   **Username:** `
+    *   **Username:** `admin`
+    *   **Password:** `SecureAdminPass123`
 
 ## Project Structure
 
