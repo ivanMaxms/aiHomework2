@@ -1,0 +1,36 @@
+.profile-container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.profile-header h3 {
+    margin: 0;
+}
+
+.profile-details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-details p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.profile-details strong {
+  color: var(--primary-color);
+  margin-right: 1rem;
+} 

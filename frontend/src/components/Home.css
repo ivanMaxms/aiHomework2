@@ -1,0 +1,113 @@
+.home-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.user-table-container {
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  overflow: hidden; /* Ensures the border radius is respected by the table */
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.user-table thead {
+  background-color: #f9fafb;
+}
+
+.user-table th {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  user-select: none; /* Prevents text selection on click */
+}
+
+.user-table th:hover {
+    background-color: #f0f0f0;
+}
+
+.sort-indicator-hidden,
+.sort-indicator-asc,
+.sort-indicator-desc {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.sort-indicator-hidden {
+    opacity: 0.3;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #aaa; /* Default arrow pointing down */
+}
+
+.sort-indicator-asc {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.sort-indicator-desc {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--primary-color);
+}
+
+.user-table tbody tr {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.user-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.user-name {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.user-email {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+  border-radius: 50%;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  background-color: rgba(208, 2, 27, 0.1);
+} 

@@ -1,0 +1,38 @@
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-background-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.app-nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.app-nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.app-nav-links .nav-link {
+  font-weight: 500;
+  color: var(--text-color);
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.app-nav-links .nav-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.app-nav-links .nav-link.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+} 
